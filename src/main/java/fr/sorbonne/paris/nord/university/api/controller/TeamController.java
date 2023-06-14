@@ -12,10 +12,10 @@ import java.util.Optional;
 public class TeamController {
 
     @GetMapping("/hello")
-    public String getTeams(){
+    public String getTeams()
+    {
         return "hello world";
     }
-
     private final ITeamService teamService;
 
     public TeamController (ITeamService teamService) {
